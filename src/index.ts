@@ -5,6 +5,8 @@ const port = +process.env.PORT ?? 4000;
 
 const mongoUrl = process.env.DATABASE;
 
+const port = +process.env.PORT ?? 4000;
+
 (async () => {
   try {
     startServer(port);
