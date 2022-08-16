@@ -8,7 +8,7 @@ import {
 } from "../controllers/robotControllers";
 import authentication from "../middlewares/authentication";
 
-const robotsRouter = express.Router();
+export const robotsRouter = express.Router();
 
 robotsRouter.get("/", authentication, getAllRobots);
 robotsRouter.get("/:idRobot", getRobot);
