@@ -7,7 +7,7 @@ import {
   updateRobot,
 } from "../controllers/robotControllers";
 
-const robotsRouter = express.Router();
+export const robotsRouter = express.Router();
 
 robotsRouter.get("/", getAllRobots);
 robotsRouter.get("/:idRobot", getRobot);
